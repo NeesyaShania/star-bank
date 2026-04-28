@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+.login-container {
+    width: 100vw;    
+    min-height: 100vh; 
+    background-color: #8db4ff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.logo-star {
+    font-size: 6rem; 
+    color: #3b82f6; 
+    line-height: 0.7;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.bank-name {
+    font-size: 2.5rem;
+    font-weight: 900; 
+    color: #1e293b;
+    letter-spacing: -2px;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Card Login */
+.login-card {
+    background-color: #eef4ff;
+    width: 100%;
+    max-width: 440px; 
+    padding: 4.5rem 3.5rem; 
+    border-radius: 4rem;
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.form-subtitle {
+    color: #8391a1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 1.2rem; 
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #334155;
+    transition: all 0.2s;
+}
+
+.input-field:focus {
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.error-msg {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #5c98ff;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    box-shadow: 0 10px 15px rgba(92, 152, 255, 0.4);
+}
+
+.login-button:hover {
+    background-color: #4a86f7;
+    transform: translateY(-2px); 
+    box-shadow: 0 12px 24px rgba(92, 152, 255, 0.4);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
