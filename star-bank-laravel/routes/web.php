@@ -7,6 +7,10 @@ use App\Http\Controllers\AdminAccountController;
 use App\Http\Controllers\AdminDepositoTypeController;
 use App\Http\Controllers\CustomerTransactionController;
 
+Route::get('/', function () {
+    return view('auth.login'); 
+});
+
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
