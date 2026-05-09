@@ -141,7 +141,7 @@
                             Community
                         </h4>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            Aktif di **Karang Taruna** dan berpengalaman sebagai anggota **PMR** (SMP & SMA). Menanamkan nilai kedisiplinan dan kerja sama tim.
+                            Aktif di Karang Taruna dan berpengalaman sebagai anggota PMR (SMP & SMA). Menanamkan nilai kedisiplinan dan kerja sama tim.
                         </p>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
             const username = 'NeesyaShania'; 
             const container = document.getElementById('github-projects');
             
-            // Nama-nama repositori yang ingin ditampilkan (harus persis sama dengan di gambar GitHub kamu)
+            // Perbaikan daftar nama repository agar sesuai dengan gambar GitHub kamu
             const featuredRepos = [
                 'star-bank', 
                 'ResepKu-', 
@@ -179,7 +179,7 @@
                 // Filter hanya repo yang ada di list featuredRepos
                 const filteredRepos = repos.filter(repo => featuredRepos.includes(repo.name));
 
-                // Sortir agar urutannya sesuai dengan list featuredRepos
+                // Sortir agar urutannya konsisten
                 filteredRepos.sort((a, b) => featuredRepos.indexOf(a.name) - featuredRepos.indexOf(b.name));
 
                 container.innerHTML = ''; 
@@ -207,7 +207,7 @@
                     container.innerHTML += card;
                 });
             } catch (error) {
-                container.innerHTML = `<p class="text-red-500 text-center col-span-full font-bold">Data temporarily unavailable. Please refresh.</p>`;
+                container.innerHTML = `<p class="text-red-500 text-center col-span-full font-bold">Data temporary unavailable. Please refresh.</p>`;
             }
         }
         fetchGitHubRepos();
