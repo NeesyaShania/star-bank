@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neesya Shania | Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: #f8fafc;
+        }
+        html { scroll-behavior: smooth; }
+
+        /* Background Gradient Mesh */
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(139, 92, 246, 0.1) 0px, transparent 50%);
+        }
+
+        .glass { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.4); 
+        }
+
+        .project-card { 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        
+        .project-card:hover { 
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.2);
+        }
+
+        .accent-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+    </style>
+</head>
+<body class="bg-mesh text-slate-900 leading-relaxed">
+
+    <section class="relative pt-32 pb-24 overflow-hidden">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-widest uppercase mb-8 border border-blue-100">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                Open to Internship
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text accent-gradient">Neesya Shania</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                A passionate <span class="text-slate-900 font-semibold border-b-2 border-blue-200">Fullstack Developer</span> from Bandung. Turning complex problems into elegant, functional web applications.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-5">
+                <a href="https://github.com/NeesyaShania" target="_blank" class="accent-gradient text-white px-10 py-4 rounded-2xl font-bold hover:opacity-90 transition-all shadow-xl shadow-blue-200 flex items-center gap-2">
+                    Explore GitHub
+                </a>
+                <a href="mailto:neesyashania117@gmail.com" class="bg-white text-slate-900 px-10 py-4 rounded-2xl font-bold border border-slate-200 hover:bg-slate-50 transition-all shadow-sm">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-16">
+            <h2 class="text-3xl font-bold whitespace-nowrap">Featured Projects</h2>
+            <div class="h-[2px] w-full bg-gradient-to-r from-slate-200 to-transparent"></div>
+        </div>
+        
+        <div id="github-projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            </div>
+    </section>
+
+    <section class="py-24 bg-slate-900 text-white rounded-[3rem] mx-4 md:mx-10 mb-10 overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
+        
+        <div class="container mx-auto px-10 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20">
+                
+                <div class="space-y-12">
+                    <h3 class="text-3xl font-bold">Journey</h3>
+                    <div class="space-y-10 border-l-2 border-slate-700 ml-2">
+                        <div class="relative pl-10 group">
+                            <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1.5 ring-4 ring-slate-900"></div>
+                            <span class="text-blue-400 font-bold text-sm tracking-widest uppercase">2023 — Present</span>
+                            <h4 class="text-xl font-bold mt-1 text-white">Informatics Engineering</h4>
+                            <p class="text-slate-400 text-sm mb-4 italic">Universitas Komputer Indonesia (UNIKOM)</p>
+                            <p class="text-slate-300 text-sm">Aktif sebagai pengembang fullstack, fokus pada framework modern dan arsitektur database yang efisien.</p>
+                        </div>
+
+                        <div class="relative pl-10 group">
+                            <div class="absolute w-4 h-4 bg-slate-600 rounded-full -left-[9px] top-1.5 ring-4 ring-slate-900"></div>
+                            <span class="text-slate-500 font-bold text-sm tracking-widest uppercase">2020 — 2023</span>
+                            <h4 class="text-xl font-bold mt-1 text-white text-opacity-80">Software Engineering</h4>
+                            <p class="text-slate-400 text-sm mb-4 italic">SMK TI Pembangunan</p>
+                            <p class="text-slate-300 text-sm">Membangun dasar pemrograman yang kuat melalui proyek riil seperti Sistem Lelang Online dan Kerja Praktik.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-12">
+                    <h3 class="text-3xl font-bold">Toolbox</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-6 rounded-3xl bg-slate-800/50 border border-slate-700">
+                            <p class="text-blue-400 font-bold mb-4 uppercase tracking-tighter">Backend</p>
+                            <ul class="text-sm space-y-2 text-slate-300">
+                                <li>Laravel</li>
+                                <li>Node.js</li>
+                                <li>PHP</li>
+                                <li>MySQL / MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 rounded-3xl bg-slate-800/50 border border-slate-700">
+                            <p class="text-purple-400 font-bold mb-4 uppercase tracking-tighter">Frontend</p>
+                            <ul class="text-sm space-y-2 text-slate-300">
+                                <li>JavaScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>HTML5 / CSS3</li>
+                                <li>UI Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-3xl bg-blue-500/10 border border-blue-500/20">
+                        <h4 class="font-bold mb-2 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            Community
+                        </h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Aktif di **Karang Taruna** dan berpengalaman sebagai anggota **PMR** (SMP & SMA). Menanamkan nilai kedisiplinan dan kerja sama tim.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center">
+        <p class="text-slate-400 text-sm tracking-wide uppercase font-semibold">
+            &copy; 2026 Neesya Shania Suhaedi &bull; Bandung, Indonesia
+        </p>
+    </footer>
+
+    <script>
+        async function fetchGitHubRepos() {
+            const username = 'NeesyaShania'; 
+            const container = document.getElementById('github-projects');
+            
+            // Nama-nama repositori yang ingin ditampilkan (harus persis sama dengan di gambar GitHub kamu)
+            const featuredRepos = [
+                'star-bank', 
+                'ResepKu-', 
+                'simulasi_prediksi', 
+                'Sistem-Perpustakaan', 
+                'KasirPOS', 
+                'tugas_pembelajaran_mesin', 
+                'Chefly'
+            ];
+            
+            try {
+                const response = await fetch(`https://api.github.com/users/${username}/repos`);
+                const repos = await response.json();
+                
+                // Filter hanya repo yang ada di list featuredRepos
+                const filteredRepos = repos.filter(repo => featuredRepos.includes(repo.name));
+
+                // Sortir agar urutannya sesuai dengan list featuredRepos
+                filteredRepos.sort((a, b) => featuredRepos.indexOf(a.name) - featuredRepos.indexOf(b.name));
+
+                container.innerHTML = ''; 
+                
+                filteredRepos.forEach(repo => {
+                    const card = `
+                        <div class="project-card glass p-8 rounded-[2.5rem] flex flex-col justify-between h-full border-2 border-transparent">
+                            <div>
+                                <div class="w-14 h-14 accent-gradient rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-100">
+                                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-4 text-slate-900">${repo.name.replace(/[-_]/g, ' ')}</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed mb-8">
+                                    ${repo.description || 'Penerapan arsitektur Fullstack untuk solusi manajemen digital yang efisien dan responsif.'}
+                                </p>
+                            </div>
+                            <div class="flex justify-between items-center pt-6 border-t border-slate-100">
+                                <span class="px-4 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 uppercase tracking-wider">${repo.language || 'Project'}</span>
+                                <a href="${repo.html_url}" target="_blank" class="p-3 bg-slate-900 text-white rounded-xl hover:bg-blue-600 transition-colors shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += card;
+                });
+            } catch (error) {
+                container.innerHTML = `<p class="text-red-500 text-center col-span-full font-bold">Data temporarily unavailable. Please refresh.</p>`;
+            }
+        }
+        fetchGitHubRepos();
+    </script>
+</body>
+</html>
